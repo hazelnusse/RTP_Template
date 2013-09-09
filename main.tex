@@ -1,0 +1,28 @@
+%\documentclass[12pt]{report}
+\documentclass[12pt]{book}
+
+% Include packages here
+\usepackage{minitoc}
+\usepackage{pdfpages}
+
+% Change chaptername from Chapter to Tab
+\renewcommand{\chaptername}{Tab}
+
+\title{Dossier}
+\author{Cassandra Ann Paul}
+
+\begin{document}
+\maketitle
+
+\dominitoc
+% Don't create a real full document table of contents
+\faketableofcontents
+
+\include{tab_1}
+%\begingroup
+%\sloppy
+%\printbibliography[section=1,heading=subbibliography]
+%\endgroup
+
+\end{document}
+
